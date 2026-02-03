@@ -1,11 +1,11 @@
 import { Text, View } from "react-native";
 
-const signIn = () => {
+const explore = () => {
   return (
     <View>
-      <Text>signIn</Text>
+      <Text>explore</Text>
     </View>
   );
 };
 
-export default signIn;
+export default explore;
