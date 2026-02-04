@@ -11,10 +11,10 @@ export default function Index() {
       }}
     >
 
-      <Link href={"/sign-in"}>sign in</Link>
-      <Link href={"/explore"}>explore</Link>
-      <Link href={"/profile"}>profile</Link>
-      <Link href={"/properties/hello-world"}>properties</Link>
+      <Link href={"/sign-in"} className="text-red-500 text-2xl font-bold">sign in</Link>
+      <Link href={"/explore"} className="text-blue-500 text-2xl font-bold">explore</Link>
+      <Link href={"/profile"} className="text-green-500 text-2xl font-bold">profile</Link>
+      <Link href={"/properties/hello-world"} className="text-purple-500 text-2xl font-bold">properties</Link>
     </View>
   );
 }
