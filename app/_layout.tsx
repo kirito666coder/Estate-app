@@ -1,6 +1,7 @@
 import { SplashScreen, Stack } from "expo-router";
 import "./global.css";
 
+import { useAuthStore } from "@/store/authStore";
 import { useFonts } from "expo-font";
 import { useEffect } from "react";
 
@@ -14,8 +15,11 @@ export default function RootLayout() {
     "Rubik-SemiBold": require('../assets/fonts/Rubik-SemiBold.ttf'),
   })
 
+  const restoreSession = useAuthStore((state)=>state.restoreSession)
+
   useEffect(() => {
     if(fontsLoaded){
+      restoreSession();
       SplashScreen.hideAsync();
     }
   }, [fontsLoaded])
